@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Rick and morty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="foto_del_personaje">Foto del personaje</string>
+    <string name="characters_list">Characters List</string>
+    <string name="character_info">Character info</string>
+    <string name="episodes_list_for_this_character">Episodes list for this character</string>
+    <string name="punto_verde">Punto verde</string>
+    <string name="episodes_list">Episodes list</string>
+    <string name="characters_list_in_this_episode">Characters list in this episode</string>
+    <string name="locations_list">Locations list</string>
+    <string name="residents">Residents</string>
+</resources>

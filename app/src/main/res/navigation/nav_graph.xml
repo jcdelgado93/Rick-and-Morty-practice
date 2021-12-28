@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainManuFragment">
+
+    <fragment
+        android:id="@+id/charactersListFragment"
+        android:name="com.example.rickandmorty.characterList.ui.CharactersListFragment"
+        android:label="CharactersListFragment"
+        tools:layout="@layout/fragment_characters_list">
+        <action
+            android:id="@+id/action_charactersListFragment_to_charactersDetailsFragment"
+            app:destination="@id/charactersDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/charactersDetailsFragment"
+        android:name="com.example.rickandmorty.characterDetails.ui.CharactersDetailsFragment"
+        android:label="fragment_characters_details"
+        tools:layout="@layout/fragment_characters_details" >
+        <action
+            android:id="@+id/action_charactersDetailsFragment_to_locationDetailsFragment"
+            app:destination="@id/locationDetailsFragment" />
+        <action
+            android:id="@+id/action_charactersDetailsFragment_to_episodeDetailsFragment"
+            app:destination="@id/episodeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainManuFragment"
+        android:name="com.example.rickandmorty.mainMenu.ui.MainManuFragment"
+        android:label="fragment_main_manu"
+        tools:layout="@layout/fragment_main_manu" >
+        <action
+            android:id="@+id/action_mainManuFragment_to_locationListFragment"
+            app:destination="@id/locationListFragment" />
+        <action
+            android:id="@+id/action_mainManuFragment_to_episodeListFragment"
+            app:destination="@id/episodeListFragment" />
+        <action
+            android:id="@+id/action_mainManuFragment_to_charactersListFragment"
+            app:destination="@id/charactersListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationDetailsFragment"
+        android:name="com.example.rickandmorty.locationDetails.ui.LocationDetailsFragment"
+        android:label="fragment_location_details"
+        tools:layout="@layout/fragment_location_details" >
+        <action
+            android:id="@+id/action_locationDetailsFragment_to_charactersDetailsFragment"
+            app:destination="@id/charactersDetailsFragment" />
+        <action
+            android:id="@+id/action_locationDetailsFragment_to_episodeDetailsFragment"
+            app:destination="@id/episodeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationListFragment"
+        android:name="com.example.rickandmorty.locationList.ui.LocationListFragment"
+        android:label="fragment_location_list"
+        tools:layout="@layout/fragment_location_list" >
+        <action
+            android:id="@+id/action_locationListFragment_to_locationDetailsFragment"
+            app:destination="@id/locationDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/episodeDetailsFragment"
+        android:name="com.example.rickandmorty.episodeDetails.ui.EpisodeDetailsFragment"
+        android:label="fragment_episode_details"
+        tools:layout="@layout/fragment_episode_details" >
+        <action
+            android:id="@+id/action_episodeDetailsFragment_to_charactersDetailsFragment"
+            app:destination="@id/charactersDetailsFragment" />
+        <action
+            android:id="@+id/action_episodeDetailsFragment_to_locationDetailsFragment"
+            app:destination="@id/locationDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/episodeListFragment"
+        android:name="com.example.rickandmorty.episodeList.ui.EpisodeListFragment"
+        android:label="fragment_episode_list"
+        tools:layout="@layout/fragment_episode_list" >
+        <action
+            android:id="@+id/action_episodeListFragment_to_episodeDetailsFragment"
+            app:destination="@id/episodeDetailsFragment" />
+    </fragment>
+</navigation>
